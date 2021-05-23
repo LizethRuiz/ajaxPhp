@@ -29,9 +29,9 @@
     $q = intval($_GET['q']);                              
     /*Abre la conexion con el servidor de la BD
        Dominio: localhost
-       usuario: israel
-       password: abc123 */
-    $con = mysqli_connect('localhost','israel_php','1234');                 
+       usuario: user
+       password: contra123 */
+    $con = mysqli_connect('localhost','user','contra123');                 
 
     if (!$con) {
         // imprime un mensaje de error y sale del script
