@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Incluye libreria para jquery--> 
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="js/scriptIndex.js"></script>
+</head>
+
+<!-- ************************* PAGINA ***************************************** --> 
+<body onload='mostrarUsuario(); crearSelector();'> <!-- Funciones llamadas despues de cargar la pagina --> 
+
+    <form>
+        <input type="submit" value="Borra Todo" onclick="return borrarUsuario()">
+        <br>
+        <span id="lugarSelector">[ Lugar donde se coloca el  Selector en la pagina ]</span>
+        <input type="submit" value="Borra Seleccinado" onclick="return borrarUsuario2()">
+    </form>
+    <br>
+
+    <form id="mi_formulario">
+        Id: <input type="number" name="id" id="mi_id"><br><br>
+        Nombre:<input type="text" name="nom"><br><br>
+        Apellido:<input type="text" name="ap"><br><br>
+        Edad:<input type="number" name="ed"><br><br>
+        Nacimiento:<input type="text" name="nac"><br><br>
+        Trabajo:<input type="text" name="trab"><br><br>  
+        <!--El boton es submit para que se haga la validacion de los campos del lado del cliente-->
+        <input type="submit" name="boton" value="Insertar" onclick="return insertarUsuario()" > 
+        <input type="button" name="botonConsulta" value="Consulta" onclick="location.href='consulta.html'" >      
+    </form>
+
+    <!-- Lugar en la pagina Web dinde se olocara la tabla con los datos de la BD  --> 
+    <div id="txtHint"><b>[ La informacion de la persona se mostrara aqui ]</b></div>
+
+</body>
+
+</html>

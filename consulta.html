@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Incluye libreria para jquery--> 
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+
+    <!-- Incluye mis script--> 
+    <script type="text/javascript" src="js/scriptConsultas.js"></script>
+</head>
+
+<!-- ************************* PAGINA ***************************************** --> 
+<body onload="llamarPhp(0); crearSelector();">
+    <!-- Lugar en la pagina Web donde se pondra el selector que tendra valores de la BD --> 
+    <div id="lugarSelector"> Lugar donde se coloca el  Selector en la pagina</div>
+
+    <br>
+    <!-- Lugar en la pagina Web donde se mostrará la tabla resultado de la consultay--> 
+    <div id="resultado">Lugar donde se coloca el Resultado </div>
+</body>
+
+</html>
